@@ -1,0 +1,135 @@
+.container{
+    display: flex;
+    color:rgb(255, 255, 255);
+    height: 10rem;
+    background-color: rgb(126 142 92);
+
+    border-radius: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.carousel{
+margin: 1rem;
+    width: 40%;
+    height: 8rem;
+}
+.img_size{
+
+
+    height:20rem;
+}
+.color_black{
+    color: black;
+}
+.container_contentO{
+    width: 50%;
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    background-color: rgb(237 236 229);
+    border-radius: 1rem;
+    padding: .5rem;
+
+}
+.container_title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.container_plantasexterior{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 22rem;
+    
+}
+.card {
+    overflow: hidden; 
+  }
+  .card-img-top {
+    height: 200px; 
+  }
+  .container_grid{
+    margin:2rem;
+  }
+  .container_input{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+    width: 90%;
+    gap:2rem;
+
+
+  }
+  .form-group{
+margin-top: 1rem;
+margin-bottom: 1rem;
+  }
+
+  @media (max-width: 767px) {
+   .container_input{
+    margin: 1rem;
+   }
+    }
+    @media (max-width: 1122px) {
+        .container_contentO{
+            font-size: .8rem;
+        }
+
+    }
+    @media (max-width: 751px) {
+        .container{
+            font-size: .8rem;
+        }
+        .container_plantasexterior{
+            flex-direction: column;
+            height: 20rem;
+            align-items: center;
+        }
+        .container_contentO{
+            width: 90%;
+            margin:1rem;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            
+        
+        }
+        #carouselExample {
+            width: 90%;
+            margin: auto;
+        }
+       
+
+    }
+            
+    @media (max-width: 760px) {
+       
+        .container_plantasexterior{
+          
+            height: 50rem;
+            
+        }
+       
+
+    }
+    @media (max-width: 518px) {
+       
+        .container_plantasexterior{
+          
+            height: 58rem;
+            
+        }
+       
+
+    }
+            
