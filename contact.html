@@ -9,81 +9,83 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Verde Vivo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"aria-label="Ir a la sección de incio" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-label="Ir a la sección de información de la compañia"href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" aria-label="desplegar opciones de tipos de plantas" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tipos de plantas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" aria-label="plantas de sol" href="#">De Sol</a></li>
+                            <li><a class="dropdown-item" href="#" aria-label="plantas de sombra">De Sombra</a></li>
+                            <li><a class="dropdown-item" href="#" aria-label="plantas de media sombra">De Media Sombra</a></li>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Verde Vivo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Tipos de plantas
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">De Sol</a></li>
-                        <li><a class="dropdown-item" href="#">De Sombra</a></li>
-                        <li><a class="dropdown-item" href="#">De Media Sombra</a></li>
-                       
-                       
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contactanos</a>
-                </li>
-                
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-label="Ir a la sección de contacto" href="./contact.html">Contactanos</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" aria-label="buscar información">Buscar</button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-<div class="container_input mt-5">
+    </nav>
+</header>
+               
+<section class="container_input mt-5" >
     <h2>Estamos atentos a tus preguntas</h2>
     <form>
         <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+            <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" tabindex="1">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Introduce tu email">
+            <input type="email" class="form-control" id="email" placeholder="Introduce tu email" tabindex="2">
         </div>
         <div class="form-group">
             <label for="telefono">Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu teléfono">
+            <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu teléfono" tabindex="3">
         </div>
         <div class="form-group">
             <label for="comentarios">Comentarios</label>
-            <textarea class="form-control" id="comentarios" rows="3" placeholder="Introduce tus comentarios"></textarea>
+            <textarea class="form-control" id="comentarios" rows="3" placeholder="Introduce tus comentarios"
+                tabindex="4"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-</div>
-</div>
+        <button type="submit" class="btn btn-primary" tabindex="5" aria-label="enviar formulario">Enviar</button>
+</section>
+
 <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="index.html" aria-label="Ir a la sección de inicio"class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" aria-label="Ir a la sección de caracteristicas" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" aria-label="Ir a la sección de precios" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" aria-label="Ir a la sección de preguntas frecuentes"class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" aria-label="Ir a la sección de información"class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
     <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
-  </footer>
+</footer>
 
 
 
